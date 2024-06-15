@@ -18,9 +18,6 @@ export const getReport = async ({date_admission,date_departure,territory_id}) =>
 
 const apiReportLisURL = 'http://localhost:8080/api/reports/reportlista';
 export const getReportLista = async ({date_admission,date_departure,territory_id}) => {
-    console.log(date_departure);
-    console.log(date_admission);
-    console.log(territory_id);
     try {
         const response = await axios.get(`${apiReportLisURL}/${date_admission}/${date_departure}/${territory_id}`);
         return response;
