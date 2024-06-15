@@ -1,0 +1,17 @@
+.my-resize-table {
+  width: 100%; /* Ajustar al 100% del ancho del contenedor */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+@media (max-height: 400px) { /* Ajuste el umbral de altura según sea necesario */
+  .my-resize-table {
+    height: 300px; /* Establecer una altura fija para pantallas más pequeñas */
+    overflow-y: auto; /* Habilitar el desplazamiento vertical */
+  }
+}
